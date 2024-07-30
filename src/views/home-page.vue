@@ -15,9 +15,10 @@ const value = ref(new Date());
         <div class="instructions">
           <p>Steps to replicate issue:</p>
           <ol>
-            <li>Set the time to 00:00 using the keyboard</li>
-            <li>Set the minutes to 01 using the keyboard</li>
-            <li>Left mouse click into the hours and type in 1</li>            
+            <li>Left mouse click into the minutes part of the datebox</li>
+            <li>Using the keyboard, type 1 to set the minutes to 01</li>
+            <li>Without clicking outside the datbox, left mouse click into the hours</li>            
+            <li>Using the keyboard, type 1</li>
           </ol>        
           <p>Expected result: 01:01<br />
             Actual result: 11:01</p>
